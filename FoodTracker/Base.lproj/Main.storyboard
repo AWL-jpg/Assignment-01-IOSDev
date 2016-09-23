@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1912" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -19,12 +20,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="dmg-dw-CgO">
-                                <rect key="frame" x="20" y="80" width="560" height="81"/>
+                                <rect key="frame" x="20" y="80" width="560" height="621"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UjO-10-Es1">
                                         <rect key="frame" x="0.0" y="0.0" width="87" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U4x-xF-jmV">
@@ -35,7 +36,73 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkT-DD-2MO">
                                         <rect key="frame" x="0.0" y="51" width="141" height="30"/>
                                         <state key="normal" title="Set default label text"/>
+                                        <connections>
+                                            <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ss-zw-raA"/>
+                                        </connections>
                                     </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="44R-Ij-9GE">
+                                        <rect key="frame" x="0.0" y="81" width="540" height="540"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qm9-37-6aq">
+                                                <rect key="frame" x="0.0" y="0.0" width="540" height="540"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="htu-3D-Cg0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="540" height="540"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gSm-vG-gq0">
+                                                                <rect key="frame" x="0.0" y="0.0" width="540" height="540"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lHI-Lp-mBJ">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="540" height="540"/>
+                                                                        <subviews>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="K6h-BD-uLY">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="540" height="540"/>
+                                                                                <subviews>
+                                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QRN-ZE-4iG">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="540" height="540"/>
+                                                                                        <subviews>
+                                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gDP-Z9-xlw">
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="540" height="540"/>
+                                                                                                <subviews>
+                                                                                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="RPa-zy-esJ">
+                                                                                                        <rect key="frame" x="0.0" y="0.0" width="540" height="540"/>
+                                                                                                        <gestureRecognizers/>
+                                                                                                        <constraints>
+                                                                                                            <constraint firstAttribute="width" secondItem="RPa-zy-esJ" secondAttribute="height" multiplier="1:1" id="8D4-dF-Fr5"/>
+                                                                                                        </constraints>
+                                                                                                        <variation key="default">
+                                                                                                            <mask key="constraints">
+                                                                                                                <exclude reference="8D4-dF-Fr5"/>
+                                                                                                            </mask>
+                                                                                                        </variation>
+                                                                                                        <connections>
+                                                                                                            <outletCollection property="gestureRecognizers" destination="Oit-dW-HXk" appends="YES" id="w7K-fh-pA7"/>
+                                                                                                        </connections>
+                                                                                                    </imageView>
+                                                                                                </subviews>
+                                                                                                <constraints>
+                                                                                                    <constraint firstItem="RPa-zy-esJ" firstAttribute="top" secondItem="gDP-Z9-xlw" secondAttribute="top" constant="12" id="wVA-aP-mR1"/>
+                                                                                                </constraints>
+                                                                                                <variation key="default">
+                                                                                                    <mask key="constraints">
+                                                                                                        <exclude reference="wVA-aP-mR1"/>
+                                                                                                    </mask>
+                                                                                                </variation>
+                                                                                            </stackView>
+                                                                                        </subviews>
+                                                                                    </stackView>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="U4x-xF-jmV" secondAttribute="trailing" id="tgm-S2-06c"/>
@@ -49,10 +116,23 @@
                             <constraint firstItem="dmg-dw-CgO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Yi4-Xa-lge"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mealNameLabel" destination="UjO-10-Es1" id="NQa-CM-vNV"/>
+                        <outlet property="nameTextField" destination="U4x-xF-jmV" id="dIe-zu-hOE"/>
+                        <outlet property="photoImageView" destination="RPa-zy-esJ" id="2mG-oD-f8a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Oit-dW-HXk">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="Khx-eI-bfZ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="305" y="429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="defaultPhoto" width="540" height="540"/>
+    </resources>
 </document>
